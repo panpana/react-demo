@@ -1,0 +1,112 @@
+.list-wrapper{
+    width: 100%;
+    background: url(../../assets/bg3.png) repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &::before{
+        position: absolute;
+        background-image: url(../../assets/bg3_border.png);
+        background-repeat: repeat-x;
+        background-size: 19px 7px;
+        height: 7px;
+        width: 100%;
+        top: -7px;
+        content: "";
+    }
+
+    .title{
+        margin: 60px 0;
+        font-size: 36px;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        text-align: center;
+
+        &::after {
+            content: "";
+            background-image: url(../../assets/nami01.png);
+            background-size: 43px 9px;
+            background-position: center bottom;
+            display: block;
+            width: 43px;
+            height: 9px;
+            margin: 20px auto 0 auto;
+        }
+        span {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            letter-spacing: 0.2em;
+        }
+
+    }
+
+    .product{
+        width:1200px;
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+
+        .productItem{
+            border-radius: 5px;
+            padding: 10px 5px;
+            margin: 30px 50px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+
+            &:hover{
+                background: #fbfff3;
+                color: #888;
+            }
+
+            .img{
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+                background: url(../../assets/pro.jpg);
+                background-size: contain;
+                margin: 0 auto;
+            }
+            .name{
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.15em;
+                text-align: center;
+            }
+            .name::after{
+                background-image: url(../../assets/nami01.png);
+                background-position: center bottom;
+                background-size: 43px 8px;
+                display: block;
+                content: "";
+                width: 43px;
+                height: 8px;
+                margin: 8px auto 18px;
+            }
+            .price{
+                float: left;
+                margin: 5px 145px 0 0;
+            }
+            
+            .intro{
+                height: 60px;
+            }
+            .cart{
+                width:30px;
+                height: 30px;
+                float: right;
+                border-radius: 50%;
+                background:#ffc53d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+  }
+
+  
+  
